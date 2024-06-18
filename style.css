@@ -33,6 +33,11 @@ a, a:hover{color: black}
     background-color: #EA7653;
 }
 
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
 .logo-header svg {
     width: 64px;
     height: 72px;
