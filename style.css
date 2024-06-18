@@ -17,12 +17,18 @@ BlankSlate WordPress Theme 2011-2024
 BlankSlate is distributed under the terms of the GNU GPL
 */
 
+a{color: black}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-a{color: black}
+footer{
+    background-color: #EA7653;
+    padding-top: 50px;
+}
+
 
 .logo-footer svg{
     max-width: 64px
