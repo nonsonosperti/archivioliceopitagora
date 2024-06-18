@@ -10,7 +10,7 @@
 <div id="wrapper" class="hfeed">
 <header>
    <section style="background-color: orange; color: black">
-        <div style="max-width: 1200px">
+        <div style="max-width: 1200px; margin: 0 auto;">
             ciao
         </div>
     </section>
