@@ -39,6 +39,11 @@ footer{
     display: block;
 }
 
+.footer-wrapper .logo-footer {
+    display: flex;
+    align-items: center;
+}
+
 .logo-footer svg{
     max-width: 64px
 }
