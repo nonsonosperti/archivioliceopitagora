@@ -172,6 +172,8 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+    
+    wp_enqueue_style('titillium-font', 'https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 
     // Optionally, enqueue your theme's main stylesheet
     wp_enqueue_style('main-styles', get_stylesheet_uri());
