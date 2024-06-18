@@ -9,7 +9,7 @@
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
 <header>
-   <section style="background-color: orange; color: black">
+   <section style="background-color: #EA7653; color: black">
         <div style="max-width: 1200px; margin: 0 auto;">
             ciao
         </div>
