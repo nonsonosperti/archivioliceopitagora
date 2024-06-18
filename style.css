@@ -29,6 +29,9 @@ footer{
     padding-top: 50px;
 }
 
+.logos-wrapper{
+    display: flex;
+}
 
 .logo-footer svg{
     max-width: 64px
