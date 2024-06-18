@@ -2,7 +2,7 @@
 <?php get_sidebar(); ?>
 </div>
 <footer id="footer-wrapper" class="footer-wrapper" style="background-color: #EA7653">
-    <div class="container">
+    <div class="container">ciao
         <div class="row variable-gutters mb-5">
             <div class="col logos-wrapper">
                 <img class="ue-logo" src="https://www.liceopitagoracrotone.edu.it/wp-content/themes/design-scuole-wordpress-theme/assets/img/logo-eu-inverted.svg" alt="Finanziato dall' Unione Europea - Next generation EU">
