@@ -12,7 +12,7 @@
 <div id="pre-header" class="bg-petrol">
     <div class="container">
         <div class="row variable-gutters">
-            <div class="col-6">
+            <div class="col-8">
                 <a href="https://www.miur.gov.it/" target="_blank" style="margin-right: 10px" aria-label="MIUR - Collegamento esterno - Apre su nuova scheda">
                     <strong>MIUR</strong>
                 </a>
@@ -23,8 +23,8 @@
                     <strong> <i class="fa fa-phone" aria-hidden="true"></i> 0962905731</strong>
                 </a>
                 <span>Codice Meccanografico KRPC02000L  Codice Fatturazione UFHY7G</span>
-            </div><!-- /col-6 -->
-            </div><!-- /col-6 -->
+            </div>
+            </div>
         </div><!-- /row -->
     </div><!-- /container -->
 </div>
