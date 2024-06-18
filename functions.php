@@ -171,8 +171,7 @@ function my_theme_enqueue_styles() {
     // Enqueue Bootstrap CSS
     wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 
-    // Optionally, enqueue your theme's main stylesheet
-    wp_enqueue_style('main-styles', get_stylesheet_uri());
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
