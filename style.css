@@ -20,6 +20,10 @@ BlankSlate is distributed under the terms of the GNU GPL
     font-family: 'Titillium Web', sans-serif;
 }
 
+b, strong {
+    font-weight: 600;
+}
+
 a, a:hover{color: black}
 
 #pre-header {
