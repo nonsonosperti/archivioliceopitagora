@@ -33,6 +33,11 @@ a, a:hover{color: black}
     background-color: #EA7653;
 }
 
+.header-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .logo-header {
     display: flex;
     align-items: center;
