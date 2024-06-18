@@ -33,6 +33,13 @@ a, a:hover{color: black}
     background-color: #EA7653;
 }
 
+.logo-header svg {
+    width: 64px;
+    height: 72px;
+    display: block;
+    fill: #455b71;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
