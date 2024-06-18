@@ -33,6 +33,10 @@ footer{
     display: flex;
 }
 
+.footer-wrapper .logo-footer .h1 span{
+    display: block;
+}
+
 .logo-footer svg{
     max-width: 64px
 }
