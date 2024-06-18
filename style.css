@@ -16,8 +16,8 @@ Text Domain: blankslate
 BlankSlate WordPress Theme 2011-2024
 BlankSlate is distributed under the terms of the GNU GPL
 */
-html{
-    font-family: 'Titillium Web';
+*{
+    font-family: 'Titillium Web', sans-serif;
 }
 
 a, a:hover{color: black}
