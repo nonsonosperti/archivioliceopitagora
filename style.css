@@ -27,6 +27,12 @@ b, strong {
 
 a, a:hover{color: black}
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 #pre-header {
     height: 40px;
     padding: 0;
