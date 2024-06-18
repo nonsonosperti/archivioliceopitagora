@@ -66,3 +66,8 @@ footer{
     opacity: 87%;
     font-size: 1.12rem;
 }
+
+.footer-list ul {
+    padding: 0;
+    list-style: none;
+}
