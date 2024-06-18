@@ -24,6 +24,6 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 a{color: black}
 
-footer svg{
+.logo-footer svg{
     max-width: 64px
 }
