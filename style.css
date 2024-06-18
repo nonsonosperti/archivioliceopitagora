@@ -30,7 +30,8 @@ footer{
 }
 
 .logos-wrapper{
-    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .footer-wrapper .logo-footer .h1 span{
