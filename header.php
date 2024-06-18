@@ -8,25 +8,6 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
-<!-- <header id="header" role="banner">
-<div id="branding">
-<div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<?php
-if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; }
-echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url"><span itemprop="name">' . esc_html( get_bloginfo( 'name' ) ) . '</span></a>';
-if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
-?>
-</div>
-<div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
-</div>
-<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-<div id="search"><?php get_search_form(); ?></div>
-</nav>
-</header> -->
-<div id="container">
-<main id="content" role="main">
-
 <header style="color:rgb(0, 0, 0);position:relative;z-index:1;width: 100%;box-shadow:rgba(0, 0, 0, 0.1) 0px 1.6px 24.8px 0px;background-color:rgb(255, 255, 255);display:block;box-sizing:border-box;">
     <div style="height:40px;padding:0px;margin:0px;font-weight:700;line-height:40px;color:rgb(0, 0, 0);font-size:14px;background-color:rgb(234, 118, 83);box-sizing:border-box;">
         <div style="max-width:1200px;padding-left:14px;padding-right:14px;width: 100%;margin-right: auto;margin-left: auto;box-sizing:border-box;">
@@ -268,3 +249,5 @@ if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1
         </div><!-- /container -->
     </div><!-- /sub-nav -->
 </header>
+<div id="container">
+<main id="content" role="main">
