@@ -165,3 +165,22 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+
+
+function my_theme_enqueue_styles() {
+    // Enqueue Bootstrap CSS
+    wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+    // Optionally, enqueue your theme's main stylesheet
+    wp_enqueue_style('main-styles', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
+
+function my_theme_enqueue_scripts() {
+    // Enqueue jQuery (optional, as WordPress already includes jQuery by default)
+    wp_enqueue_script('jquery');
+
+    // Enqueue Bootstrap JS
+    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');

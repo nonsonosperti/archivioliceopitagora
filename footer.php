@@ -1,7 +1,7 @@
 </main>
 <?php get_sidebar(); ?>
 </div>
-<footer id="footer-wrapper" class="footer-wrapper" style="background-color: #EA7653">
+<footer>
     <div class="container">
         <div class="row variable-gutters mb-5">
             <div class="col logos-wrapper">
