@@ -19,6 +19,17 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 a, a:hover{color: black}
 
+#pre-header {
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+    font-size: .875rem;
+    background-color: #EA7653;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
