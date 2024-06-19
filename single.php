@@ -12,8 +12,11 @@ if (!empty($custom_fields)) {
     echo '<ul>';
     // Itera attraverso ogni custom field
     foreach ($custom_fields as $key => $values) {
+
+        $label = readable_custom_field_name($key);
+
         // La chiave del custom field è la label
-        echo '<li><strong>' . esc_html($key) . ':</strong> ';
+        echo '<li><strong>' . esc_html($label) . ':</strong> ';
         
         // I valori possono essere un array (in caso di campi con valori multipli)
         foreach ($values as $value) {
