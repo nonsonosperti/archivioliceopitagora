@@ -20,6 +20,12 @@ if( $fields ): ?>
                 if ($field['type'] === 'file') {
                     $file_url = $field['value']['url'];
                     echo '<a href="' . $file_url . '">'. $field['value']['filename'] .'</a>';
+                } else if (is_array($field['value'])) {
+                    echo '<ul>';
+                    foreach ($field['value'] as $item) {
+                        echo '<li>' . $item . '</li>';
+                    }
+                    echo '</ul>';
                 } else {
                     echo $field['value'];
                 }
