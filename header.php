@@ -57,7 +57,7 @@
 					                                        <div class="header-social">
                         <span>Seguici su:</span>
                         <div class="header-social-wrapper">
-                        <a href="https://www.facebook.com/pages/Liceo-classico-Pitagora/702368123282347" aria-label="facebook" title="vai alla pagina facebook"><i class="fa-brands fa-facebook-f"></i></a>                            <a href="https://www.youtube.com/results?search_query=liceo+classico+crotone" aria-label="youtube" title="vai alla pagina youtube"><svg class="icon it-social-youtube"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-youtube"></use></svg></a>                                                                                                                                        </div><!-- /header-social-wrapper -->
+                        <a href="https://www.facebook.com/pages/Liceo-classico-Pitagora/702368123282347" aria-label="facebook" title="vai alla pagina facebook"><i class="fa-brands fa-facebook-f"></i></a>                            <a href="https://www.youtube.com/results?search_query=liceo+classico+crotone" aria-label="youtube" title="vai alla pagina youtube"><i class="fa-brands fa-youtube"></i></a>                                                                                                                                        </div><!-- /header-social-wrapper -->
                     </div><!-- /header-social -->
                                     </div><!-- /col -->
             </div><!-- /row -->
