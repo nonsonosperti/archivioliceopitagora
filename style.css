@@ -149,7 +149,7 @@ a, a:hover{color: black}
 }
 
 #footer-wrapper .footer-list a {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .footer-social .footer-social-wrapper {
