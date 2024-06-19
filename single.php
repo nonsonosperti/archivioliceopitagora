@@ -6,30 +6,37 @@
 $custom_fields = get_post_meta(get_the_ID());
 
 // Controlla se ci sono custom fields
-if (!empty($custom_fields)) {
+if ($custom_fields) {
     echo '<div class="custom-fields">';
     echo '<h3>Custom Fields</h3>';
     echo '<ul>';
-    // Itera attraverso ogni custom field
-    foreach ($custom_fields as $key => $values) {
-
-        $label = readable_custom_field_name($key);
-
-        // La chiave del custom field è la label
-        echo '<li><strong>' . esc_html($label) . ':</strong> ';
+    // Itera attraverso ogni campo personalizzato
+    foreach ($custom_fields as $key => $value) {
+        // Ottieni l'oggetto del campo
+        $field = get_field_object($key);
         
-        // I valori possono essere un array (in caso di campi con valori multipli)
-        foreach ($values as $value) {
-            $decoded_value = maybe_unserialize($value);
-            if (is_array($decoded_value)) {
-                // Se il valore è un array, visualizza come stringa
-                echo esc_html(implode(', ', $decoded_value));
+        if ($field) {
+            // La label del campo è fornita da ACF
+            $label = $field['label'];
+            
+            echo '<li><strong>' . esc_html($label) . ':</strong> ';
+            
+            if ($field['type'] === 'file') {
+                // Se il campo è un file, visualizza come link
+                $url = $value['url'];
+                $filename = $value['filename'];
+                echo '<a href="' . esc_url($url) . '" target="_blank">' . esc_html($filename) . '</a>';
             } else {
-                echo esc_html($decoded_value);
+                // Per altri tipi di campi
+                if (is_array($value)) {
+                    echo esc_html(implode(', ', $value));
+                } else {
+                    echo esc_html($value);
+                }
             }
+            
+            echo '</li>';
         }
-        
-        echo '</li>';
     }
     echo '</ul>';
     echo '</div>';
