@@ -1,31 +1,40 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>
-<?php 
-// Ottieni tutti i custom fields per il post corrente
+<?php
+// Ottieni tutti i custom fields del post corrente
 $custom_fields = get_post_meta(get_the_ID());
 
 // Controlla se ci sono custom fields
 if (!empty($custom_fields)) {
     echo '<div class="custom-fields">';
-    echo '<h2>Custom Fields</h2>';
+    echo '<h3>Custom Fields</h3>';
     echo '<ul>';
-
-    // Itera attraverso i custom fields
-    foreach ($custom_fields as $key => $value) {
-        // Evita i custom fields interni di WordPress che iniziano con _
-        if (substr($key, 0, 1) !== '_') {
-            echo '<li>';
-            echo '<strong>' . esc_html($key) . ':</strong> ' . esc_html($value[0]);
-            echo '</li>';
+    // Itera attraverso ogni custom field
+    foreach ($custom_fields as $key => $values) {
+        // La chiave del custom field è la label
+        echo '<li><strong>' . esc_html($key) . ':</strong> ';
+        
+        // I valori possono essere un array (in caso di campi con valori multipli)
+        foreach ($values as $value) {
+            $decoded_value = maybe_unserialize($value);
+            if (is_array($decoded_value)) {
+                // Se il valore è un array, visualizza come stringa
+                echo esc_html(implode(', ', $decoded_value));
+            } else {
+                echo esc_html($decoded_value);
+            }
         }
+        
+        echo '</li>';
     }
-
     echo '</ul>';
     echo '</div>';
+} else {
+    echo '<p>No custom fields found.</p>';
 }
-
 ?>
+
 <?php //if ( comments_open() && !post_password_required() ) { comments_template( '', true ); } ?>
 <?php endwhile; endif; ?>
 <footer class="footer">
