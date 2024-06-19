@@ -7,7 +7,7 @@ $post_id = get_the_ID();
 
 echo $post_id;
 
-$fields = get_field_objects($post_id);
+$fields = get_field_object($post_id);
 
 echo $fields;
 
