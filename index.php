@@ -7,7 +7,7 @@ get_header();
 $query = new WP_Query( 
     array(
         'post_type' => 'any',  // Recupera da tutti i tipi di post
-        'posts_per_page' => 40000,
+        'posts_per_page' => 4000,
     ));
 
 
