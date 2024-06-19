@@ -148,6 +148,10 @@ a, a:hover{color: black}
     flex-direction: row;
 }
 
+.footer-list ul li {
+    padding-bottom: 16px !important;
+}
+
 #footer-wrapper .footer-list a {
     text-decoration: underline !important;
 }
