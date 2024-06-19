@@ -142,6 +142,9 @@ a, a:hover{color: black}
     column-gap: 30px;
 }
 
-.header-social, .footer-social, .footer-inline-menu {
-    align-items: center !important;
+.sub-footer .footer-social {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
