@@ -146,7 +146,6 @@ a, a:hover{color: black}
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 #footer-wrapper .footer-list a {
