@@ -16,7 +16,7 @@ if (!empty($custom_fields)) {
         // Evita i custom fields interni di WordPress che iniziano con _
         if (substr($key, 0, 1) !== '_') {
             echo '<li>';
-            echo '<strong>' . esc_html($key) . ':</strong> ' . esc_html($value);
+            echo '<strong>' . esc_html($key) . ':</strong> ' . esc_html($value[0]);
             echo '</li>';
         }
     }
