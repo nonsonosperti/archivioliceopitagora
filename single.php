@@ -21,7 +21,7 @@ if ($custom_fields) {
             
             echo '<li><strong>' . esc_html($label) . ':</strong> ';
             
-            if ($field['type'] === 'file') {
+            if ($field['type'] === 'file' && !empty($value)) {
                 // Se il campo è un file, visualizza come link
                 $url = $value['url'];
                 $filename = $value['filename'];
