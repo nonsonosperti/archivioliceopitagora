@@ -4,6 +4,7 @@ get_header();
 // Query per raccogliere tutti i post da tutti i post types
 $args = array(
     'post_type' => 'any',  // Recupera da tutti i tipi di post
+    'posts_per_page' => -1,
 );
 
 $query = new WP_Query( array( 'post_type' => 'any' ) );
