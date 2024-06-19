@@ -13,7 +13,7 @@ if ($meta_fields): ?>
             <?php foreach ($meta_fields as $key => $values): ?>
                 <?php 
                 // Ottieni l'oggetto campo utilizzando il nome del campo (key)
-                $field = get_field_object($key, $post_id);
+                $field = get_field_object($key);
 
                 if ($field):
                     // La label del campo è fornita da ACF
