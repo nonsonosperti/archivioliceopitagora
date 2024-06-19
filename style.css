@@ -65,6 +65,11 @@ a, a:hover{color: black}
     padding: 15px;
 }
 
+.header-social {
+    display: flex;
+}
+
+
 .logo-header .h1, .logo-header h1 {
     display: block;
     font-weight: 400;
