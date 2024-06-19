@@ -3,7 +3,9 @@
 <?php get_template_part( 'entry' ); ?>
 <?php
 // Ottieni tutti i campi personalizzati del post corrente
-$fields = get_field_objects();
+$post_id = get_the_ID();
+
+$fields = get_field_objects($post_id);
 
 if( $fields ): ?>
     <div class="custom-fields">
