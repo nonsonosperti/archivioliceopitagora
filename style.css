@@ -156,3 +156,10 @@ a, a:hover{color: black}
     display: flex;
     align-items: center;
 }
+
+.footer-social a svg {
+    fill: #000000;
+    width: 18px;
+    height: 18px;
+    display: block;
+}
