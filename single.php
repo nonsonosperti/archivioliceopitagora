@@ -2,11 +2,9 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>
 <?php
-// Ottieni l'ID del post corrente
-$post_id = get_the_ID();
 
 // Ottieni tutti i metadati del post corrente
-$meta_fields = get_post_meta($post_id);
+$meta_fields = get_post_meta();
 
 if ($meta_fields): ?>
     <div class="custom-fields">
