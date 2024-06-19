@@ -3,7 +3,7 @@
 <?php get_template_part( 'entry' ); ?>
 <?php
 // Ottieni tutti i custom fields del post corrente
-$custom_fields = get_fields();
+$custom_fields = get_post_meta(get_the_ID());
 
 // Controlla se ci sono custom fields
 if ($custom_fields) {
@@ -11,7 +11,7 @@ if ($custom_fields) {
     echo '<h3>Custom Fields</h3>';
     echo '<ul>';
     // Itera attraverso ogni campo personalizzato
-    foreach ($custom_fields as $key => $value) {
+    foreach ($custom_fields as $key) {
         // Ottieni l'oggetto del campo
         $field = get_field_object($key);
         
