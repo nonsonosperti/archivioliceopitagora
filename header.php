@@ -52,9 +52,9 @@
                     </div><!-- /sticky-main-nav -->
 
                 </div><!-- /col -->
-                
+                <div class="col-4 d-flex align-items-center justify-content-end">
 
-					                                        <div class="header-social">
+					    <div class="header-social">
                         <span>Seguici su:</span>
                         <div class="header-social-wrapper">
                         <a href="https://www.facebook.com/pages/Liceo-classico-Pitagora/702368123282347" aria-label="facebook" title="vai alla pagina facebook"><i class="fa-brands fa-facebook-f"></i></a>                            <a href="https://www.youtube.com/results?search_query=liceo+classico+crotone" aria-label="youtube" title="vai alla pagina youtube"><i class="fa-brands fa-youtube"></i></a>                                                                                                                                        </div><!-- /header-social-wrapper -->
