@@ -4,15 +4,17 @@
 <?php
 // Ottieni tutti i custom fields del post corrente
 
-$fields = get_field_objects();
+
+
+$fields = get_fields();
+
 if( $fields ): ?>
     <ul>
-        <?php foreach( $fields as $field ): ?>
-            <li><?php echo $field['label']; ?>: <?php echo $field['value']; ?></li>
+        <?php foreach( $fields as $name => $value ): ?>
+            <li><b><?php echo $name; ?></b> <?php echo $value; ?></li>
         <?php endforeach; ?>
     </ul>
-<?php endif; 
-?>
+<?php endif; ?>
 
 <?php //if ( comments_open() && !post_password_required() ) { comments_template( '', true ); } ?>
 <?php endwhile; endif; ?>
