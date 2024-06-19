@@ -3,8 +3,9 @@
 <?php get_template_part( 'entry' ); ?>
 <?php
 
+$post_id = get_the_ID();
 // Ottieni tutti i metadati del post corrente
-$meta_fields = get_fields();
+$meta_fields = get_fields('options');
 
 echo '<pre>';
 var_dump($meta_fields);
