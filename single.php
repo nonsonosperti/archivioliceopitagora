@@ -3,7 +3,7 @@
 <?php get_template_part( 'entry' ); ?>
 <?php
 // Ottieni tutti i custom fields del post corrente
-$custom_fields = get_post_meta(get_the_ID());
+$custom_fields = get_fields();
 
 // Controlla se ci sono custom fields
 if ($custom_fields) {
