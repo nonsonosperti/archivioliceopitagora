@@ -13,7 +13,7 @@ if (!empty($custom_fields)) {
     // Itera attraverso ogni custom field
     foreach ($custom_fields as $key => $values) {
         // La chiave del custom field è la label
-        the_field($key);
+        echo '<li><strong>' . esc_html($key) . ':</strong> ';
         
         // I valori possono essere un array (in caso di campi con valori multipli)
         foreach ($values as $value) {
