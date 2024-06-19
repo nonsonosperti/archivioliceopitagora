@@ -16,7 +16,12 @@ if( $fields ): ?>
         <?php foreach( $fields as $field ): ?>
             <li><strong><?php echo $field['label']; ?>:</strong>
                 <?php
+
+                if (empty($field['value'])) {
+                    echo 'Valore non disponibile';
+                } else {
                 // Verifica se il campo è un file
+
                 if ($field['type'] === 'file') {
                     $file_url = $field['value']['url'];
                     echo '<a href="' . $file_url . '">'. $field['value']['filename'] .'</a>';
@@ -29,6 +34,8 @@ if( $fields ): ?>
                 } else {
                     echo $field['value'];
                 }
+
+            }
                 ?></li>
         <?php endforeach; ?>
     </ul>
