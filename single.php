@@ -4,7 +4,7 @@
 <?php
 
 // Ottieni tutti i metadati del post corrente
-$meta_fields = get_post_meta();
+$meta_fields = get_post_meta(get_the_ID());
 
 if ($meta_fields): ?>
     <div class="custom-fields">
