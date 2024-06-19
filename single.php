@@ -9,7 +9,9 @@ echo $post_id;
 
 $fields = get_field_object($post_id);
 
-echo $fields;
+echo '<pre>';
+var_dump($fields);
+echo '</pre>';
 
 if( $fields ): ?>
     <div class="custom-fields">
