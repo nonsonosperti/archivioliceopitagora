@@ -39,6 +39,7 @@
      <image href="https://www.liceopitagoracrotone.edu.it/wp-content/uploads/2023/03/LOGO-LICEO-CLASSICO-optimized.jpg" xlink:href="https://www.liceopitagoracrotone.edu.it/wp-content/uploads/2023/03/LOGO-LICEO-CLASSICO-optimized.jpg" width="100%" height="100%"></image>    
 </svg>
 </a>                        <div class="h1">
+                            <span style="font-size: 0.5em">Archivio</span>
                             <a href="https://www.liceopitagoracrotone.edu.it" aria-label="Vai alla homepage" title="vai alla homepage">
                                 <span>Liceo Classico Statale</span>
                                 <span><strong>Pitagora</strong></span>
