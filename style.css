@@ -60,6 +60,11 @@ a, a:hover{color: black}
     display: block;
 }
 
+
+.header-social a, .footer-social a {
+    padding: 15px;
+}
+
 .logo-header .h1, .logo-header h1 {
     display: block;
     font-weight: 400;
