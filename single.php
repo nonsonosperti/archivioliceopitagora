@@ -8,7 +8,7 @@ $post_id = get_the_ID();
 $meta_fields = get_fields('options');
 
 echo '<pre>';
-var_dump($meta_fields);
+ echo $meta_fields;
 echo '</pre>';
 
 if ($meta_fields): ?>
