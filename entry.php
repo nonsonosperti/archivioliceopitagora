@@ -12,7 +12,7 @@ if ( is_singular() ) {
 <?php if ( is_singular() ) { echo '</h1>'; } else { echo '</h2>'; } 
 
 if ($post_type) {
-    echo ' <span class="post-type-label">' . esc_html($post_type->labels->singular_name) . '</span>';
+    echo ' <p class="post-type-label">' . esc_html($post_type->labels->singular_name) . '</p>';
 }
 
 ?>
