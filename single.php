@@ -7,10 +7,6 @@
 
 $fields = get_field_objects();
 
-echo '<pre>';
-var_dump($fields);
-echo '</pre>';
-
 if( $fields ): ?>
     <ul>
         <?php foreach( $fields as $field ): ?>
