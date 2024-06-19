@@ -5,7 +5,11 @@
 // Ottieni tutti i campi personalizzati del post corrente
 $post_id = get_the_ID();
 
+echo $post_id;
+
 $fields = get_field_objects($post_id);
+
+echo $fields;
 
 if( $fields ): ?>
     <div class="custom-fields">
