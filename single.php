@@ -14,7 +14,16 @@ echo '</pre>';
 if( $fields ): ?>
     <ul>
         <?php foreach( $fields as $field ): ?>
-            <li><?php echo $field['label']; ?>: <?php echo $field['value']; ?></li>
+            <li><strong><?php echo $field['label']; ?>:</strong>
+                <?php
+                // Verifica se il campo è un file
+                if ($field['type'] === 'file') {
+                    $file_url = $field['value']['url'];
+                    echo '<a href="' . $file_url . '">Scarica il file</a>';
+                } else {
+                    echo $field['value'];
+                }
+                ?></li>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
