@@ -6,6 +6,10 @@
 // Ottieni tutti i metadati del post corrente
 $meta_fields = get_post_meta(get_the_ID());
 
+echo '<pre>';
+var_dump($meta_fields);
+echo '</pre>';
+
 if ($meta_fields): ?>
     <div class="custom-fields">
         <h3>Custom Fields</h3>
