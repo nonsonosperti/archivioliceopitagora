@@ -8,6 +8,8 @@
 $fields = get_field_objects();
 
 if( $fields ): ?>
+
+    <h3>Info e allegati</h3>
     <ul>
         <?php foreach( $fields as $field ): ?>
             <li><strong><?php echo $field['label']; ?>:</strong>
