@@ -4,7 +4,7 @@
 <?php
 
 // Ottieni tutti i metadati del post corrente
-$meta_fields = get_post_meta(get_the_ID());
+$meta_fields = get_fields();
 
 echo '<pre>';
 var_dump($meta_fields);
