@@ -5,17 +5,16 @@
 // Ottieni tutti i metadati del post corrente
 
 
-$fields = get_fields();
+$fields = get_field_objects();
 
 echo '<pre>';
 var_dump($fields);
 echo '</pre>';
 
-
 if( $fields ): ?>
     <ul>
-        <?php foreach( $fields as $name => $value ): ?>
-            <li><b><?php echo $name; ?></b> <?php echo $value; ?></li>
+        <?php foreach( $fields as $field ): ?>
+            <li><?php echo $field['label']; ?>: <?php echo $field['value']; ?></li>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
