@@ -148,3 +148,7 @@ a, a:hover{color: black}
     flex-direction: row;
     align-items: center;
 }
+
+#footer-wrapper .footer-list a {
+    text-decoration: underline;
+}
