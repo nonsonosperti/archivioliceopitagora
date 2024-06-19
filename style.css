@@ -130,3 +130,14 @@ a, a:hover{color: black}
 .sub-footer {
     display: flex;
 }
+
+.footer-inline-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 600;
+    list-style: none;
+    padding: 0;
+    row-gap: 10px;
+    column-gap: 30px;
+}
