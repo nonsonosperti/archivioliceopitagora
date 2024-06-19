@@ -10,6 +10,7 @@ $query = new WP_Query(
         'posts_per_page' => 4000,
     ));
 
+ echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' );
 
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 get_template_part( 'entry' );
