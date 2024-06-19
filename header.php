@@ -51,18 +51,7 @@
                     </div><!-- /sticky-main-nav -->
 
                 </div><!-- /col -->
-                <div class="col-4 d-flex align-items-center justify-content-end">
-                    <div class="header-search d-flex align-items-center">
-                        <button type="button" class="d-flex align-items-center search-btn" data-toggle="modal" data-target="#search-modal" aria-label="Cerca nel sito" data-element="search-modal-button">
-                            <span class="d-none d-lg-block mr-2"><strong>Cerca</strong></span>
-                            <svg class="svg-search">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-search"></use>
-                            </svg>
-                        </button>
-                    </div><!-- /header-search -->
-                    <div class="header-utils-sticky">
-
-                    </div>
+                
 
 					                                        <div class="header-social">
                         <span>Seguici su:</span>
