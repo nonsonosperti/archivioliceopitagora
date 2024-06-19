@@ -126,3 +126,7 @@ a, a:hover{color: black}
     padding: 0;
     list-style: none;
 }
+
+.sub-footer {
+    display: flex;
+}
