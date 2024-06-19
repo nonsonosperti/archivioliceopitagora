@@ -19,7 +19,7 @@ if( $fields ): ?>
                 // Verifica se il campo è un file
                 if ($field['type'] === 'file') {
                     $file_url = $field['value']['url'];
-                    echo '<a href="' . $file_url . '">Scarica il file</a>';
+                    echo '<a href="' . $file_url . '">'. $field['value']['filename'] .'</a>';
                 } else {
                     echo $field['value'];
                 }
