@@ -7,7 +7,7 @@ $post_id = get_the_ID();
 
 echo $post_id;
 
-$fields = get_field_object($post_id);
+$fields = get_post_meta($post_id);
 
 echo '<pre>';
 var_dump($fields);
