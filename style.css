@@ -76,6 +76,7 @@ a, a:hover{color: black}
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 50px
 }
 
 .footer-wrapper{
