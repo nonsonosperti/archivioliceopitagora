@@ -23,18 +23,27 @@ if( $fields ): ?>
                     echo 'Valore non disponibile';
                 } else {
                 // Verifica se il campo è un file
-
-                if ($field['type'] === 'file') {
-                    $file_url = $field['value']['url'];
-                    echo '<a href="' . $file_url . '">'. $field['value']['filename'] .'</a>';
-                } else if (is_array($field['value'])) {
-                    echo '<ul>';
-                    foreach ($field['value'] as $item) {
-                        echo '<li>' . $item . '</li>';
-                    }
-                    echo '</ul>';
-                } else {
-                    echo $field['value'];
+                switch ($field['type']) {
+                    case 'file':
+                        $file_url = $field['value']['url'];
+                        echo '<a href="' . $file_url . '">Scarica il file</a>';
+                        break;
+                    case 'image':
+                        $image_url = $field['value']['url'];
+                        echo '<img src="' . $image_url . '" alt="' . $field['label'] . '" style="max-width:200px;"/>';
+                        break;
+                    case 'array':
+                        if (is_array($field['value'])) {
+                            echo '<ul>';
+                            foreach ($field['value'] as $item) {
+                                echo '<li>' . $item . '</li>';
+                            }
+                            echo '</ul>';
+                        }
+                        break;
+                    default:
+                        echo $field['value'];
+                        break;
                 }
 
             }
