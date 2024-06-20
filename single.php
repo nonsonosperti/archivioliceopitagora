@@ -26,7 +26,7 @@ if( $fields ): ?>
                 switch ($field['type']) {
                     case 'file':
                         $file_url = $field['value']['url'];
-                        echo '<a href="' . $file_url . '">Scarica il file</a>';
+                        echo '<a href="' . $file_url . '">'. $field['value']['filename'] .'</a>';
                         break;
                     case 'image':
                         $image_url = $field['value']['url'];
@@ -36,7 +36,12 @@ if( $fields ): ?>
                         if (is_array($field['value'])) {
                             echo '<ul>';
                             foreach ($field['value'] as $item) {
-                                echo '<li>' . $item . '</li>';
+                                // Verifica se l'elemento dell'array è un'immagine
+                                if (isset($item['url'])) {
+                                    echo '<li><img src="' . $item['url'] . '" alt="' . $field['label'] . '" style="max-width:200px;"/></li>';
+                                } else {
+                                    echo '<li>' . $item . '</li>';
+                                }
                             }
                             echo '</ul>';
                         }
@@ -45,7 +50,6 @@ if( $fields ): ?>
                         echo $field['value'];
                         break;
                 }
-
             }
                 ?></li>
         <?php endforeach; ?>
