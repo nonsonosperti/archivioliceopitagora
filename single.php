@@ -7,6 +7,10 @@
 
 $fields = get_field_objects();
 
+echo '<pre>';
+echo var_dump($fields);
+echo '</pre>';
+
 if( $fields ): ?>
 
     <h3>Info e allegati</h3>
