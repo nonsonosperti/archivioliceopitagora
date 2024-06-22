@@ -171,6 +171,7 @@ a, a:hover{color: black}
 
 .sub-footer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-inline-menu {
