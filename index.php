@@ -11,7 +11,7 @@ $query = new WP_Query(
         'paged'=> get_query_var( 'paged' )
     ));
 
- echo do_shortcode( '[searchandfilter fields="search,category,post_tag, post_types" post_types="attachments"]' );
+ echo do_shortcode( '[searchandfilter fields="post_types"]' );
 
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 get_template_part( 'entry' );
