@@ -6,7 +6,7 @@ $post_types = get_post_types();
 
 $query = new WP_Query( 
     array(
-        'post_type' => $post_types,  // Recupera da tutti i tipi di post
+        'post_type' => 'any',  // Recupera da tutti i tipi di post
         'posts_per_page' => 40,
         'paged'=> get_query_var( 'paged' )
     ));
