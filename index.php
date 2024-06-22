@@ -17,6 +17,5 @@ if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(
 get_template_part( 'entry' );
 comments_template();
 endwhile; endif;
-the_posts_pagination();
-// get_template_part( 'nav', 'below' );
+get_template_part( 'nav', 'below' );
 get_footer();
