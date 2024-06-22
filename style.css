@@ -21,6 +21,10 @@ BlankSlate is distributed under the terms of the GNU GPL
     color: #000;
 }
 
+body{
+    margin: 0
+}
+
 ul{
     padding-left: 0
 }
