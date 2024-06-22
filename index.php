@@ -11,7 +11,7 @@ $query = new WP_Query(
         'paged'=> get_query_var( 'paged' )
     ));
 
- echo do_shortcode( '[searchandfilter fields="search" post_types="all" submit_label="Cerca" ]' );
+ echo do_shortcode( '[searchandfilter fields="search, post_types" post_types="attachment" submit_label="Cerca" ]' );
 
 if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 get_template_part( 'entry' );
