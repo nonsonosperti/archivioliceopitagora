@@ -5,7 +5,7 @@
 $post_type = get_post_type_object(get_post_type());
 
 if ($post_type) {
-    echo ' <p class="post-type-label">' . esc_html($post_type->labels->singular_name) . '</p>';
+    echo ' <p class="post-type-label"><a href="'. get_post_type_archive_link().'">'. esc_html($post_type->labels->singular_name). '</a></p>';
 }
 
 if ( is_singular() ) { 
