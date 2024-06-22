@@ -71,9 +71,9 @@
 <li><a class="text-underline-hover" href="https://www.liceopitagoracrotone.edu.it/privacy-policy/" data-element="privacy-policy-link">Privacy Policy</a></li>
 <li><a class="text-underline-hover" href="https://form.agid.gov.it/view/0e20f4e0-d7d9-11ee-bac1-91345ea67400" data-element="accessibility-link">Dichiarazione di accessibilità</a></li>
 </ul>                                    <div class="footer-social">
-                        <span>Seguici su:</span>
-                        <div class="footer-social-wrapper">
-                            <a href="https://www.facebook.com/pages/Liceo-classico-Pitagora/702368123282347" aria-label="facebook" title="vai alla pagina facebook"><svg class="icon it-social-facebook"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-facebook"></use></svg></a>                            <a href="https://www.youtube.com/results?search_query=liceo+classico+crotone" aria-label="youtube" title="vai alla pagina youtube"><svg class="icon it-social-youtube"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-youtube"></use></svg></a>                                                                                                                                        </div><!-- /footer-social-wrapper -->
+<span>Seguici su:</span>
+                        <div class="header-social-wrapper">
+                        <a href="https://www.facebook.com/pages/Liceo-classico-Pitagora/702368123282347" aria-label="facebook" title="vai alla pagina facebook"><i class="fa-brands fa-facebook-f"></i></a>                            <a href="https://www.youtube.com/results?search_query=liceo+classico+crotone" aria-label="youtube" title="vai alla pagina youtube"><i class="fa-brands fa-youtube"></i></a>                                                                                                                                        </div><!-- /header-social-wrapper -->
                     </div><!-- /gooter-social -->
                             </div>
         </div><!-- /row -->
