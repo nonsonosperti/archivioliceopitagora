@@ -58,6 +58,13 @@ a, a:hover{color: black}
     background-color: #EA7653;
 }
 
+#pre-header.mobile{display: none}
+
+@media (max-width: 899px) {
+    #pre-header.desktop{display: none}
+    #pre-header.mobile{display: flex}
+}
+
 .header-top {
     padding-top: 20px;
     padding-bottom: 20px;
