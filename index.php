@@ -2,7 +2,7 @@
 get_header();
 
 // Query per raccogliere tutti i post da tutti i post types
-$post_types = get_post_types(array('public' => true, 'name !=' => 'attachment'), 'names');
+$post_types = get_post_types();
 
 $query = new WP_Query( 
     array(
