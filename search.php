@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-<?php if ( have_posts() ) : ?>
+<?php 
+
+echo do_shortcode( '[searchandfilter fields="search, post_types" post_types="all" submit_label="Cerca" search_label="Digita qui" ]' );
+
+if ( have_posts() ) : ?>
 <header class="header">
 <h1 class="entry-title" itemprop="name"><?php printf( esc_html__( 'Search Results for: %s', 'blankslate' ), get_search_query() ); ?></h1>
 </header>
