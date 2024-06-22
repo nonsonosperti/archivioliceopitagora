@@ -81,6 +81,9 @@ a, a:hover{color: black}
     display: block;
 }
 
+@media (max-width: 800px) {
+    .header-social{display: none}
+}
 
 .header-social a, .footer-social a {
     padding: 15px;
