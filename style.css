@@ -85,13 +85,16 @@ a, a:hover{color: black}
     .header-social{display: none !important}
 }
 
+@media (min-width: 800px) {
+    .header-social {
+        display: flex;
+    }
+}
 .header-social a, .footer-social a {
     padding: 15px;
 }
 
-.header-social {
-    display: flex;
-}
+
 
 
 .logo-header .h1, .logo-header h1 {
