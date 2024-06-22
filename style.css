@@ -60,7 +60,7 @@ a, a:hover{color: black}
 
 #pre-header.mobile{display: none}
 
-@media (max-width: 899px) {
+@media (max-width: 1180px) {
     #pre-header.desktop{display: none}
     #pre-header.mobile{display: flex}
 }
