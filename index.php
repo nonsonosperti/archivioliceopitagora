@@ -7,6 +7,8 @@ get_header();
 $query = new WP_Query( 
     array(
         'post_type' => 'any',  // Recupera da tutti i tipi di post
+        'posts_per_page' => 40,
+        'paged'=> get_query_var( 'paged' )
     ));
 
  echo do_shortcode( '[searchandfilter fields="search,category,post_tag, post_types" post_types="attachments"]' );
