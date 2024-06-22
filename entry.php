@@ -5,7 +5,13 @@
 $post_type = get_post_type_object(get_post_type());
 
 if ($post_type) {
-    echo ' <p class="post-type-label"><a href="'. get_post_type_archive_link().'">'. esc_html($post_type->labels->singular_name). '</a></p>';
+    $post_type_singular_name = esc_html($post_type->labels->singular_name);
+    $post_type_archive_link = get_post_type_archive_link($post_type->name);
+
+    echo '<p class="post-type-label">';
+    echo $post_type_singular_name;
+    echo ' <a href="' . esc_url($post_type_archive_link) . '">Vai all\'archivio di ' . $post_type_singular_name . '</a>';
+    echo '</p>';
 }
 
 if ( is_singular() ) { 
