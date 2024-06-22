@@ -34,7 +34,7 @@
                 <div class="col-8 d-flex align-items-center">
                     
                     <div class="logo-header">
-						<a href="https://www.liceopitagoracrotone.edu.it" aria-label="Vai alla homepage" title="Vai alla homepage">
+						<a href="https://www.liceopitagoracrotone.edu.it/archivio" aria-label="Vai alla homepage" title="Vai alla homepage">
 <svg width="100%" height="100%" class="icon" aria-hidden="true">       
      <image href="https://www.liceopitagoracrotone.edu.it/wp-content/uploads/2023/03/LOGO-LICEO-CLASSICO-optimized.jpg" xlink:href="https://www.liceopitagoracrotone.edu.it/wp-content/uploads/2023/03/LOGO-LICEO-CLASSICO-optimized.jpg" width="100%" height="100%"></image>    
 </svg>
