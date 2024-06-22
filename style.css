@@ -191,6 +191,12 @@ a, a:hover{color: black}
     flex-direction: row;
 }
 
+@media (max-width: 991.98px) {
+    .sub-footer .footer-social {
+        margin-left: 0;
+    }
+}
+
 .footer-list ul li {
     padding-bottom: 16px !important;
 }
