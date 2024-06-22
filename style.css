@@ -82,7 +82,7 @@ a, a:hover{color: black}
 }
 
 @media (max-width: 800px) {
-    .header-social{display: none}
+    .header-social{display: none !important}
 }
 
 .header-social a, .footer-social a {
